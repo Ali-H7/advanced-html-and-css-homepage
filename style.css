@@ -1,0 +1,61 @@
+ *,
+ *:before,
+ *:after {
+     box-sizing: border-box;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ html {
+     font-size: 62.5%;
+ }
+
+ img {
+     display: block;
+ }
+
+ .img-header {
+     width: 800px;
+ }
+
+ .container {
+     margin: 2%;
+ }
+
+ .about-container {
+     display: flex;
+     font-size: 2.4rem;
+     padding: 3%;
+ }
+
+ .about-text {
+     background-color: antiquewhite;
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+     padding: 5% 3%;
+     gap: 1.6rem;
+     position: relative;
+
+ }
+
+ .about-description {
+     padding-bottom: 64px;
+ }
+
+ .icons {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     gap: 16px;
+     bottom: 5%;
+     right: 5%;
+     position: absolute;
+ }
+
+ .icon {
+     width: 40px;
+ }
