@@ -17,12 +17,16 @@
      display: block;
  }
 
- .img-header {
-     width: 800px;
- }
+
 
  .container {
      margin: 2%;
+ }
+
+ /* header */
+
+ .img-header {
+     width: 800px;
  }
 
  .about-container {
@@ -46,7 +50,7 @@
      padding-bottom: 64px;
  }
 
- .icons {
+ .header-icons {
      display: flex;
      justify-content: flex-end;
      align-items: center;
@@ -56,6 +60,61 @@
      position: absolute;
  }
 
- .icon {
+ .header-icon {
      width: 40px;
+ }
+
+ /* main content */
+
+ .cards-container {
+     display: flex;
+     flex-direction: column;
+     gap: 1.6rem;
+ }
+
+ .cards {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     width: 1200px;
+     gap: 4.8rem;
+ }
+
+ .placeholder-image {
+     background-color: red;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 400px;
+     height: 300px;
+     font-size: 4.8rem;
+ }
+
+ .meal-info {
+     background-color: blueviolet;
+     width: 400px;
+     height: 200px;
+     padding: 2.4rem;
+     display: flex;
+     flex-direction: column;
+     gap: 1.6rem;
+ }
+
+ .card-title {
+     display: flex;
+     font-size: 3.2rem;
+     justify-content: space-between;
+ }
+
+ .card-icons {
+     display: flex;
+     gap: 8px;
+     align-items: center;
+ }
+
+ .card-icon {
+     width: 24px;
+ }
+
+ .meal-description {
+     font-size: 1.6rem;
  }
