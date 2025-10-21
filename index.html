@@ -11,7 +11,11 @@
 <body>
     <div class="container">
         <div class="about-container">
-            <img src="images/header-img.webp" alt="" class="img-header">
+            <picture>
+                <source media="(width < 1024px)" srcset="images/header-img-480w.webp" />
+                <img src="images/header-img.webp" alt="" class="img-header">
+
+            </picture>
             <div class="about-text">
                 <h2>About our Resturant</h2>
                 <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptates
@@ -150,7 +154,11 @@
                     <img src="icons/share.svg" alt="" class="contact-icon">
                 </div>
             </div>
-            <img src="images/footer-img.webp" alt="" class="img-footer">
+            <picture>
+                <source media="(width < 1024px)" srcset="images/footer-img-480w.webp" />
+                <img src="images/footer-img.webp" alt="" class="img-footer">
+            </picture>
+
         </div>
     </div>
     </div>

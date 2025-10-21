@@ -55,7 +55,6 @@
 
  .header-icons {
      display: flex;
-     justify-content: flex-end;
      align-items: center;
      gap: 16px;
      bottom: 5%;
@@ -152,4 +151,48 @@
 
  .img-footer {
      width: 800px;
+ }
+
+
+ /* phone */
+
+ @media (max-width: 600px) {
+
+     .cards {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .contact-container,
+     .about-container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .contact-container {
+         gap: 4.8rem;
+     }
+
+     .img-footer,
+     .img-header {
+         width: 100%;
+     }
+
+     .about-text {
+         background-color: transparent;
+     }
+
+     .header-icons {
+         position: static;
+         justify-content: center;
+         margin-top: -50px;
+     }
+
+     .contact-icons {
+         justify-content: center;
+         padding: 1.6rem;
+
+     }
+
+
  }
