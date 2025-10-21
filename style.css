@@ -29,7 +29,7 @@
  /* header */
 
  .img-header {
-     width: 800px;
+     max-width: 800px;
  }
 
  .about-container {
@@ -134,7 +134,7 @@
  }
 
  .contact-info {
-     font-size: 3.2rem;
+     font-size: clamp(2.4rem, 7vw, 3.2rem);
      display: flex;
      flex-direction: column;
      gap: 16px;
@@ -154,13 +154,9 @@
  }
 
 
- /* phone */
+ /* responsive */
 
- @media (max-width: 600px) {
-
-     .cards {
-         grid-template-columns: repeat(1, 1fr);
-     }
+ @media (max-width: 1400px) {
 
      .contact-container,
      .about-container {
@@ -169,13 +165,9 @@
          align-items: center;
      }
 
-     .contact-container {
-         gap: 4.8rem;
-     }
-
      .img-footer,
      .img-header {
-         width: 100%;
+         max-width: 100%;
      }
 
      .about-text {
@@ -188,11 +180,31 @@
          margin-top: -50px;
      }
 
+     .contact-container {
+         gap: 4.8rem;
+     }
+
      .contact-icons {
          justify-content: center;
          padding: 1.6rem;
 
      }
 
+
+ }
+
+ @media (max-width: 768px) {
+
+     .cards {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+ }
+
+ @media (max-width: 480px) {
+
+     .cards {
+         grid-template-columns: repeat(1, 1fr);
+     }
 
  }
